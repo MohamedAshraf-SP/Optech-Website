@@ -1,41 +1,49 @@
 
 import nodemailer from 'nodemailer';
 
-async function sendFeedback(name, userEmail, message) {
-    //console.log(process.env.ORGANIZATION_EMAIL,process.env.ORGANIZATION_EMAIL_PASS, userEmail)
-    const transporter = nodemailer.createTransport({
-        service: 'gmail', // Can use other providers like Yahoo, Outlook, etc.
+async function sendFeedback(name, phone, userEmail, message) {
+    console.log(process.env.ORGANIZATION_EMAIL, process.env.ORGANIZATION_EMAIL_PASS, userEmail)
 
+
+    const transporter = nodemailer.createTransport({
+        host: 'smtp.ionos.co.uk', // IONOS SMTP server
+        port: 465, // The port for sending emails // Can use other providers like Yahoo, Outlook, etc.
+        // service: 'gmail',
+        secure: true,
         auth: {
             user: process.env.ORGANIZATION_EMAIL,    // Your organization's email
             pass: process.env.ORGANIZATION_EMAIL_PASS // Your organization's email password
+            //pass: pass // Your organization's email password
         }
     });
 
     // Email options
     const mailOptions = {
-        from: `"${name}" <${userEmail}>`,  // From the user's email (display purposes only)
+        from: process.env.ORGANIZATION_EMAIL,  // From the user's email (display purposes only)
         to: process.env.ORGANIZATION_EMAIL, // Your organization's email
-        subject: 'New Feedback from Website',
+        subject: 'New Feedback from  BudgetStuff Website',
         text: `You have received new feedback from:
       
       Name: ${name}
+      phone: ${phone}
       Email: ${userEmail}
       
       Message: 
-      ${message}`
+      ${message}`,
+      replyTo: userEmail
     };
 
     // Send the email
     let info = await transporter.sendMail(mailOptions);
+    console.log(transporter, info)
     return info;
 }
 
 export const emailSender = async (req, res) => {
-    const { name, userEmail, message } = req.body;
+    const { name, phone, userEmail, message } = req.body;
 
     try {
-        const info = await sendFeedback(name, userEmail, message);
+        const info = await sendFeedback(name, phone, userEmail, message);
         res.status(200).json({ success: true, message: 'Feedback sent!', info });
     } catch (error) {
         console.error('Error sending feedback:', error);
