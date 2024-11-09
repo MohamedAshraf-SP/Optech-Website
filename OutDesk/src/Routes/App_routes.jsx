@@ -21,7 +21,7 @@ const CustomerService = lazy(() =>
 const MarketingVirtual = lazy(() =>
   import("../Pages/Marketing-Virtual/Marketing_Virtual")
 );
-const InsideSales = lazy(() => import("../Pages/Inside-Sales/Inside_sales"));
+const InsideSales = lazy(() => import("../Pages/inside-Sales/Inside_sales"));
 const Bookkeeper = lazy(() => import("../Pages/BookKeeper/Bookkeeping"));
 const CareCoordinator = lazy(() =>
   import("../Pages/Care-Coordinator/Care_Coordinator.jsx")
@@ -77,7 +77,6 @@ const withSuspense = (Component) => (
 );
 
 export const router = createBrowserRouter([
- 
   {
     element: withSuspense(MainLayout),
     children: [{ path: "/", element: <Home /> }],

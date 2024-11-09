@@ -32,6 +32,7 @@ export default function Dashboard() {
       setLoading(false);
     }
   };
+  //1h4Ls7UC
 
   // Add a new review
   const addReview = async (item) => {
@@ -117,7 +118,7 @@ export default function Dashboard() {
       setTimeout(() => {
         setSuccedReview(false);
       }, 2000);
-      setSubmitting(false);
+      // setSubmitting(false);
     },
   });
 
@@ -178,7 +179,9 @@ export default function Dashboard() {
                     className="mt-1 w-full bg-neutral-200 h-9 rounded-md p-2 text-secondary outline-none border focus:border-neutral-500"
                   />
                   {formik.touched.position && formik.errors.position && (
-                    <div className="text-red-600 text-sm italic mt-1">{formik.errors.position}</div>
+                    <div className="text-red-600 text-sm italic mt-1">
+                      {formik.errors.position}
+                    </div>
                   )}
                 </div>
 
@@ -199,7 +202,9 @@ export default function Dashboard() {
                     className="mt-1 w-full bg-neutral-200 h-9 rounded-md p-2 text-secondary outline-none border focus:border-neutral-500"
                   />
                   {formik.touched.rating && formik.errors.rating && (
-                    <div className="text-red-600 text-sm italic mt-1">{formik.errors.rating}</div>
+                    <div className="text-red-600 text-sm italic mt-1">
+                      {formik.errors.rating}
+                    </div>
                   )}
                 </div>
 
@@ -219,7 +224,9 @@ export default function Dashboard() {
                     className="mt-1 w-full bg-neutral-200 h-[100px] rounded-md p-2 text-secondary outline-none border focus:border-neutral-500"
                   />
                   {formik.touched.review && formik.errors.review && (
-                    <div className="text-red-600 text-sm italic mt-1">{formik.errors.review}</div>
+                    <div className="text-red-600 text-sm italic mt-1">
+                      {formik.errors.review}
+                    </div>
                   )}
                 </div>
 

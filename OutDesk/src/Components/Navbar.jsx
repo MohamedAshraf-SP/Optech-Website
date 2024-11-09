@@ -109,8 +109,16 @@ export default function Navbar({ cusotm }) {
             <div className="px-2  sm:px-6 lg:px-4 py-2 ">
               <div className="flex h-16 items-center justify-between ">
                 <div className="md:flex md:items-center  ">
-                  <Link className="block text-teal-600  w-[140px]  lg:w-[190px] lg:h-14" to="/">
-                    <img src={Images.darklogo} alt="navLogo" loading="lazy" className="w-full h-full" />
+                  <Link
+                    className="block text-teal-600  w-[140px]  lg:w-[190px] lg:h-14"
+                    to="/"
+                  >
+                    <img
+                      src={Images.darklogo}
+                      alt="navLogo"
+                      loading="lazy"
+                      className="w-full h-full"
+                    />
                   </Link>
                 </div>
                 {/* large screen navbarr */}
@@ -245,9 +253,9 @@ export default function Navbar({ cusotm }) {
       ${sideBar ? "translate-x-0" : "-translate-x-full"}`}
           >
             <div className="flex justify-between items-center">
-              <Link to="/" className="w-[110px]">
+              <Link to="/" className="w-[140px]">
                 <img
-                  src={Images.navLogo}
+                  src={Images.darkLogo}
                   alt="Navigation Logo"
                   loading="lazy"
                 />
