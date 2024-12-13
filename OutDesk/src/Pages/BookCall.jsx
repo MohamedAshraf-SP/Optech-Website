@@ -1,14 +1,14 @@
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import BookCallimg from   "/images/HowMuchDoes/smiling.webp";
- import whatExpectImg from "/images/BookCall/Capture.webp";
+import BookCallimg from "/images/HowMuchDoes/smiling.webp";
+import whatExpectImg from "/images/BookCall/Capture.webp";
 import capture1 from "/images/BookCall/Capture1.webp";
 import capture2 from "/images/BookCall/Capture2.webp";
 import capture3 from "/images/BookCall/Capture3.webp";
 import TestemonilesSection from "../Sections/TestemonilesSection";
 import UseDocumnetTitle from "../Hooks/UseDocumnetTitle";
 export default function BookCall() {
-   UseDocumnetTitle("Book Call");
+  UseDocumnetTitle("Book Call");
 
   const CalendyUrl = import.meta.env.VITE_CALENDY_URL;
   const whatExpectarr = [
@@ -43,7 +43,16 @@ export default function BookCall() {
                 <span className="text-primary text-center"> an Expert</span>
               </h2>
               <p className="text-textcolor text-[17px] text-left  md:text-center leading-relaxed my-2">
-              <strong>Ready to take your business to the next level ?</strong> <br/>Don’t let repetitive tasks hold you back! Book a strategy call with us today and discover how our Virtual Assistants can transform your workflow, boost your productivity, and help you focus on what truly matters—growing your business. Let’s turn your vision into reality!<br/> By filling out this form, you are consenting to getting communications from MyBudgetStaff. Calls are recorded for quality assurance purposes.
+                <strong>Ready to take your business to the next level ?</strong>{" "}
+                <br />
+                Don’t let repetitive tasks hold you back! Book a strategy call
+                with us today and discover how our Virtual Assistants can
+                transform your workflow, boost your productivity, and help you
+                focus on what truly matters—growing your business. Let’s turn
+                your vision into reality!
+                <br /> By filling out this form, you are consenting to getting
+                communications from MyBudgetStaff. Calls are recorded for
+                quality assurance purposes.
               </p>
               <a href={CalendyUrl} target="_blank" className="mainButton my-6">
                 Book a Strategy Call
@@ -60,18 +69,16 @@ export default function BookCall() {
             </div>
           </div>
 
- 
-
           {/* start what to Expect */}
-          <div className="pb-10 my-20">
+          <div className="pb-10 my-20 lg:px-40">
             <h2 className="mainTitle !text-center">What to Expect</h2>
             <div className="lg:flex hidden flex-row justify-center items-center overflow-hidden h-[240px]">
               <img src={whatExpectImg} alt="what to expect" />
             </div>
-            <div className="grid md:grid-cols-3 grid-cols-1  space-y-10 ">
+            <div className="grid md:grid-cols-3 grid-cols-1  space-y-10 md:space-y-0">
               {whatExpectarr.map((expectedBlock, index) => (
                 <div
-                  className="flex flex-col items-center justify-between mx-4"
+                  className="flex flex-col items-center md:mx-10 gap-2"
                   key={index}
                 >
                   <div className="rounded-full w-24 h-24 border-4 border-solid border-[#F89F24] flex justify-center items-center overflow-hidden lg:hidden">

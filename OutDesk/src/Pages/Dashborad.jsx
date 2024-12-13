@@ -32,7 +32,6 @@ export default function Dashboard() {
       setLoading(false);
     }
   };
-  //1h4Ls7UC
 
   // Add a new review
   const addReview = async (item) => {
@@ -118,7 +117,6 @@ export default function Dashboard() {
       setTimeout(() => {
         setSuccedReview(false);
       }, 2000);
-      // setSubmitting(false);
     },
   });
 

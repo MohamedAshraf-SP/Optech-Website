@@ -11,7 +11,7 @@ export default function FrequentlyAsked({ questionsArr }) {
   };
   return (
     <div
-      className="bg-[center_center] bg-no-repeat bg-contain bg-[#f6f9fd]"
+      className="bg-[center_center] bg-no-repeat bg-contain bg-[#f6f9fd] mt-8"
       style={{ backgroundImage: `url(${FrequentlyaskedImg})` }}
     >
       <div className="container py-20">

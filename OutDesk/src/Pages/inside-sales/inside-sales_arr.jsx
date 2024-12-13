@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa6";
 export const Fixed_Header_arr = {
   title: "Sales Agent Assistant",
   description:
-    "<strong>Boost Sales Efficiency and Save Up to 60% on Staffing Costs with a Professional Sales Assistant</strong> - Hiring a Sales Assistant can save your business up to 60% compared to employing a full-time in-house team member. These savings can be redirected to enhance your marketing strategies, product development, or expanding your sales initiatives.",
+    "<strong>Boost Sales Efficiency and Save Up to 60% on Staffing Costs with a Professional Sales Assistant </strong> - Hiring a Sales Assistant can save your business up to 60% compared to employing a full-time in-house team member. These savings can be redirected to enhance your marketing strategies, product development, or expanding your sales initiatives.",
 };
 export const Leader_in_Virtual = {
   title: "Generate More Leads With A Sales Agent",

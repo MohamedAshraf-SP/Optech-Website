@@ -21,12 +21,12 @@ export const services = [
   { name: "Marketing Assistant", path: "Services/Marketing-Virtual" },
   { name: "Sales assistant", path: "Services/Inside-Sales" },
   { name: "Virtual Receptionist", path: "Services/virtual-receptionist" },
-  { name: "bookkeeper", path: "Services/Virtual-bookkeeper" },
+  { name: "Bookkeeper", path: "Services/Virtual-bookkeeper" },
   {
     name: "Care coordinator",
     path: "Services/care-coordinator",
   },
-  { name: "business development", path: "Services/business-development" },
+  { name: "Business development", path: "Services/business-development" },
 ];
 // --------------------- Navbar Industries
 export const Industries = [
@@ -228,7 +228,6 @@ export const FindVirtual = [
 // Testemoniles
 export const TestemonilesContent = [
   {
-  
     StarsNum: 5,
     description:
       "We were considering downsizing but couldn’t afford to lose a staff member. MyBudgetStaff was a lifesaver.",
@@ -237,7 +236,6 @@ export const TestemonilesContent = [
     Company: "Caemac",
   },
   {
-    
     StarsNum: 5,
     description:
       "Working with MyBudgetStaff has been a dream come true. My admin assistant not only does all the admin work but also helps us manage our social media marketing.",
@@ -246,7 +244,6 @@ export const TestemonilesContent = [
     Company: "London Estates Agency",
   },
   {
-  
     StarsNum: 4,
     description:
       "If you are looking to save money, time and grow your business at the sametime then you are at the right place.",
@@ -255,7 +252,6 @@ export const TestemonilesContent = [
     Company: "A2B Security",
   },
   {
- 
     StarsNum: 4,
     description:
       "Outsourcing our BookKeeping was the best business decision we have made. We now have 5 VA's working for us.",
@@ -264,7 +260,6 @@ export const TestemonilesContent = [
     Company: "Best Accountants",
   },
   {
- 
     StarsNum: 4,
     description:
       "It’s been great working with MyBudgetStaff – it’s been very beneficial and cost effective for me. I try to focus on staying top of the things and to generate new business, and my VA’s assist with tasks like.",
@@ -273,7 +268,6 @@ export const TestemonilesContent = [
     Company: "Your Lending Concepts",
   },
   {
- 
     StarsNum: 3,
     description:
       "I’m not going to be able to make £100,000 a year if I’m spending half my time doing £10 an hour work. That’s why we’re such big fans of virtual assistants and automation – because we need to delegate those tasks.”",
@@ -282,7 +276,6 @@ export const TestemonilesContent = [
     Company: "Tax Assist",
   },
   {
- 
     StarsNum: 4,
     description:
       "There’s absolutely value in having a real estate virtual assistant – especially on the lead generation, marketing and managing clients for mortgages.”",
@@ -291,7 +284,6 @@ export const TestemonilesContent = [
     Company: "Lenders Mortgage Broker",
   },
   {
- 
     StarsNum: 5,
     description:
       "We’ve been very pleased with the amount of leads opened by our MyBudgetStaff virtual assistant. I really like working with our virtual assistant – its a game changer and massive value to our real estate partners!”",
@@ -300,7 +292,6 @@ export const TestemonilesContent = [
     Company: "Home Mortgages",
   },
   {
- 
     StarsNum: 4,
     description:
       "I’ve used MyBudgetStaff for a few years now for transaction coordination, lead followup, media & marketing, etc. If it can be done behind a computer or phone, their VA’s will rise to the challenge. I highly .”",
@@ -337,7 +328,8 @@ export const Frequentlyasked = [
       "Your virtual assistant will require training just like any in-house employee. Each business is unique, so you'll need to invest time in teaching them your specific processes, procedures, and systems. We provide you with top talent, along with the tools and resources to ensure a smooth start. When you schedule a consultation with us, you’ll also receive a guidance to help you get started and ongoing support to streamline the process and make the most of your Virtual Staff.",
   },
   {
-    Title: "How long does it take to hire a virtual assistant with MyBudgetStaff?",
+    Title:
+      "How long does it take to hire a virtual assistant with MyBudgetStaff?",
     Answer:
       "The average time to hire an assistant in the UK is roughly 30 days. At MyBudgetStaff we can provide you with multiple highly-qualified VAs to select from and hit the ground running in as little as 1 week",
   },

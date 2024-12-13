@@ -45,7 +45,6 @@ export default function Contact() {
         setSuccedReview(false);
       }, 2000);
       setLoading(false);
-      setSubmitting(false);
     },
   });
   return (
@@ -104,7 +103,7 @@ export default function Contact() {
                 Fill The Contact Form
               </h3>
               <p className="text-textcolor py-2 text-[16px]">
-                Feel free to contact with us, we don't spam your userEmail
+                Feel free to contact with us, we don't spam your Email
               </p>
               <form
                 className="grid grid-cols-12 py-6 gap-8"
@@ -150,7 +149,7 @@ export default function Contact() {
                     onBlur={formik.handleBlur}
                     value={formik.values.userEmail}
                     name="userEmail"
-                    placeholder="userEmail address"
+                    placeholder="Email address"
                   />
                   {formik.touched.userEmail && formik.errors.userEmail ? (
                     <div className="text-red-600 italic mt-1">
