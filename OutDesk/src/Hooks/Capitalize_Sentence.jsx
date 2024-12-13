@@ -4,7 +4,7 @@ const capitalizeSentences = (text) => {
 
   // Replace the first letter of each sentence with its capitalized version
   return text.replace(/(^\s*\w|[\.\!\?]\s*\w)/g, (match) =>
-    match.toUpperCase()
+    match.toUpperCase ()   
   );
 };
 
