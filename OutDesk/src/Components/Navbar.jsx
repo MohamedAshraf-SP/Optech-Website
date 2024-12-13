@@ -255,7 +255,7 @@ export default function Navbar({ cusotm }) {
             <div className="flex justify-between items-center">
               <Link to="/" className="w-[140px]">
                 <img
-                  src={Images.darkLogo}
+                  src={Images.darklogo}
                   alt="Navigation Logo"
                   loading="lazy"
                 />
