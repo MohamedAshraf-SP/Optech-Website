@@ -21,7 +21,7 @@ const CustomerService = lazy(() =>
 const MarketingVirtual = lazy(() =>
   import("../Pages/Marketing-Virtual/Marketing_Virtual")
 );
-const InsideSales = lazy(() => import("../Pages/inside-sales/Inside_sales"));
+const InsideSales = lazy(() => import("../Pages/inside-sales/inside_sales"));
 const Bookkeeper = lazy(() => import("../Pages/BookKeeper/Bookkeeping"));
 const CareCoordinator = lazy(() =>
   import("../Pages/Care-Coordinator/Care_Coordinator.jsx")
